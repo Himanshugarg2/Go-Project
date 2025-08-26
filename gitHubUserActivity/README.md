@@ -1,7 +1,6 @@
 
 # GitHub User Activity CLI
 
-Project page: https://roadmap.sh/projects/github-user-activity
 
 A simple Go command-line tool to fetch and display recent public activity for any GitHub user using the GitHub API.
 
