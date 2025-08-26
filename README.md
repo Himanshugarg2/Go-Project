@@ -1,48 +1,33 @@
-# Task Management System (Go)
 
-A simple command-line Task Management System written in Go. This project allows you to add, update, delete, and list tasks, as well as save/load them in JSON format.
+# Go Project Collection
 
-https://roadmap.sh/projects/task-tracker
+This repository contains two command-line projects written in Go:
 
-## Features
+1. **Task Management System**
+2. **GitHub User Activity CLI**
+
+---
+
+## 1. Task Management System
+
+A simple command-line Task Management System. Allows you to add, update, delete, and list tasks, as well as save/load them in JSON format.
+
+**Features:**
 - Add, update, and delete tasks
 - Mark tasks as done, not done, or in progress
 - List all tasks or filter by status
 - Save and load tasks to/from a JSON file
 
-## Folder Structure
+**Folder:** `taskManagementSystem/`
+
+**How to Run:**
+```sh
+cd Projects/Go-Project/taskManagementSystem
+go run .
 ```
-taskManagementSystem/
-├── CRUDfunctions.go
-├── FileManagementFunctions.go
-├── go.mod
-├── main.go
-├── models.go
-├── tasks.json
-```
+Follow the on-screen menu to manage your tasks.
 
-## How to Run
-
-1. **Navigate to the project directory:**
-   ```sh
-   cd Projects/Go-Project/taskManagementSystem
-   ```
-
-2. **Run the program:**
-   ```sh
-   go run .
-   ```
-
-3. **Follow the on-screen menu** to add, update, delete, or list tasks.
-
-## Saving and Loading Tasks
-- Tasks are saved to `tasks.json` in the same directory.
-- You can load tasks from this file when you restart the program.
-
-## Requirements
-- Go 1.18 or higher
-
-## Example Usage
+**Example Menu:**
 ```
 Task Management System Menu:
 1. Add Task
@@ -53,13 +38,44 @@ Task Management System Menu:
 6. Save Tasks to File
 7. Load Tasks from File
 0. Exit
-Enter your choice: 1
-Enter Task ID: 1
-Enter Task Name: Example
-Enter Description: Example task
-Select Status: 1. done 2. not done 3. in progress
-Task added.
 ```
+
+---
+
+## 2. GitHub User Activity CLI
+
+A Go CLI tool to fetch and display recent public activity for any GitHub user using the GitHub API.
+
+**Features:**
+- Fetches recent activity for a specified GitHub username
+- Displays event types and details (pushes, repo creation, membership, etc.)
+- Handles user not found and no activity cases
+
+**Folder:** `gitHubUserActivity/`
+
+**How to Run:**
+```sh
+cd Projects/Go-Project/gitHubUserActivity
+go run main.go
+```
+Enter the GitHub username when prompted.
+
+**Example Output:**
+```
+--------------------------------------------------
+Event 1:
+Event Type: PushEvent
+Event Details:
+ - Commit: 123abc | Message: Update README
+Repository Name: user/repo
+Created At: 2025-08-26T10:00:00Z
+--------------------------------------------------
+```
+
+---
+
+## Requirements
+- Go 1.18 or higher
 
 ## License
 MIT
